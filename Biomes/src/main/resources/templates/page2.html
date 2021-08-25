@@ -7,18 +7,9 @@ and open the template in the editor.
 
 <html>
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-        <!-- Latest compiled and minified Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
-
-        <!-- Latest compiled Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
         <title>Tree.io</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <!-- JavaScript Bundle with Popper -->
@@ -29,31 +20,65 @@ and open the template in the editor.
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             />
         <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+
+        <!-- Latest compiled Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
         <style>
+               @media only screen and (max-width: 480px) {
+         
+                
+            }
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {  
+          }
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {
+                img {
+                max-width: 100%;
+                max-height: auto;}
             
-            :root {
-                --animate-delay: 2s;
+            .container{
+                    max-width:100%;
+                    margin:0 auto; 
+                    padding: 0 auto;
             }
-            bg-image{
-                background-size:cover; 
             }
-            img{
-                width:cover;  
-            }
-            .tooltip{
-                font-size: 2rem;
-            }
-            .my-element {
-                display: inline-block;
-                margin: 0 0.5rem;
 
-                animation: bounce; /* referring directly to the animation's @keyframe declaration */
-                animation-duration: 2s; /* don't forget to set a duration! */
-            }
-            .animate__animated.animate__bounce {
-                --animate-duration: 1s;
+            /* Medium devices (landscrape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {}
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {}
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {}
+            body{
+                background-image:url('../taiga.jpg') ;
+                background-size:100% 100%;
+                background-repeat: no-repeat;
+                background-attachment: cover;
+                background-position: center; 
+
 
             }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+          
+             .container{
+                    mwidth:100%;
+                    margin:0 auto; 
+                    padding: 0 auto;
+                }
+           
         </style>
     </head>
     <body>
@@ -62,13 +87,11 @@ $(document).ready(function(){
 $('[data-toggle="tooltip"]').tooltip(); 
   
 });
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+
 
         </script>
         <nav class="navbar navbar- bg-white justify-content-between"></nav>
-        <div class="bg-image" style="background-image:url('../taiga.jpg')">
+        
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-1">
