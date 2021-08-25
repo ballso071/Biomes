@@ -17,11 +17,35 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <style>
 
-            bg-image{
-                background-size:cover; 
+         body{
+                background-image:url('../home1.png') ;
+                background-size:100% 100%;
+                background-repeat: no-repeat;
+                background-attachment: cover;
+
             }
+           
+            @media only screen and (max-width: 480px) {
+                .site-title {
+                    font-size: 10px;
+                }
+            }
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {}
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {}
+
+            /* Medium devices (landscrape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {}
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {}
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {}
             img {
-                width: 100%;
+                max-width: auto;
                 height: auto;
             }
             .tooltip{
