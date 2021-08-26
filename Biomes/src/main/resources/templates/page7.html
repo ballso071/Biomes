@@ -27,29 +27,52 @@ and open the template in the editor.
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             />
-        <style>
-            :root {
-                --animate-delay: 2s;
-            }
-            bg-image{
-                background-size:cover; 
-            }
-            img{
-                width:cover;  
-            }
-            .tooltip{
-                font-size: 2rem;
-            }
-            .my-element {
-                display: inline-block;
-                margin: 0 0.5rem;
+       <style>
+            @media only screen and (max-width: 480px) {
 
-                animation: bounce; /* referring directly to the animation's @keyframe declaration */
-                animation-duration: 2s; /* don't forget to set a duration! */
+
             }
-            .animate__animated.animate__bounce {
-                --animate-duration: 1s;
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {  
             }
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {
+                img {
+                    max-width: 100%;
+                    max-height: auto;}
+
+                .container{
+                    max-width:100%;
+                    margin:0 auto; 
+                    padding: 0 auto;
+                }
+            }
+
+            /* Medium devices (landscrape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {}
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {}
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {}
+            body{
+                background-image:url('../desert1.jpg') ;
+                background-size:100% 100%;
+                background-repeat: no-repeat;
+                background-attachment: cover;
+                background-position: center; 
+
+
+            }
+
+            .container{
+                mwidth:100%;
+                margin:0 auto; 
+                padding: 0 auto;
+            }
+
         </style>
     </head>
     <body>
@@ -62,11 +85,11 @@ and open the template in the editor.
 
         </script>
         <nav class="navbar navbar- bg-white justify-content-between"></nav>
-        <div class="bg-image" style="background-image:url('../desert1.jpg')">
+      
             <div class="container-fluid">
                 <div class="row">
-                     <div class="col-2"></div>
-                    <div class="col-1">
+                     <div class="col-sm-2"></div>
+                    <div class="col-sm-1 col-xs-4">
                         <br></br>
                         <br></br>
                         <br></br>
@@ -86,10 +109,10 @@ and open the template in the editor.
                         <br></br>  
                         <br></br> 
                         <br></br> 
-                        <img src="../sn.png" class="rounded"width="200" data-toggle="tooltip" data-placement="top" title="Snake"/>
+                        <img src="../sn.png" class="rounded"width="200px" data-toggle="tooltip" data-placement="top" title="Snake"/>
                     </div>
-                      <div class="col-1"></div>
-                    <div class="col-1">
+        
+                    <div class="col-sm-1">
                         <br></br>
                         <br></br> 
                         <br></br> 
@@ -104,10 +127,10 @@ and open the template in the editor.
                       <br></br>
                         <br></br>
                        
-                        <img src="../muka.png" class="rounded"width="50" data-toggle="tooltip" data-placement="top" title="Cactus"/>
+                        <img src="../muka.png" class="rounded"width="50px" data-toggle="tooltip" data-placement="top" title="Cactus"/>
                     </div>
-                  
-                    <div class="col-1">
+                     <div class="col-sm-1"></div>
+                    <div class="col-sm-2">
                         <br></br>
                         <br></br>
                         <br></br>
@@ -124,11 +147,10 @@ and open the template in the editor.
                         <br></br> 
                         <br></br>
                        
-                        <img src="../ou.png" class="rounded"width="400" data-toggle="tooltip" data-placement="top" title="Camel"/>
+                        <img src="../ou.png" class="rounded"width="400px" data-toggle="tooltip" data-placement="top" title="Camel"/>
                     </div>
-                     <div class="col-3"></div>
-                     <div class="col-1"></div>
-                    <div class="col-1">
+                     <div class="col-sm-3"></div>
+                    <div class="col-sm-1">
                         <br></br>
                         <br></br>
                         <br></br>
@@ -145,15 +167,15 @@ and open the template in the editor.
                         <br></br>
                         <br></br>
 
-                        <img src="../sc.png" class="rounded"width="150" data-toggle="tooltip" data-placement="top" title="Scorpion"/>
+                        <img src="../sc.png" class="rounded"width="150px" data-toggle="tooltip" data-placement="top" title="Scorpion"/>
                              <br></br>
                         <br></br>
                         <br></br>
                         <a href = "/index">
-                            <img src="../home.png" class="rounded"width="130">
+                            <img src="../home.png" class="rounded"width="130px">
                         </a>
                     </div> 
-                    <div class="col-1">
+                    <div class="col-sm-1">
                         <br></br>
                         <br></br>
                         <br></br>

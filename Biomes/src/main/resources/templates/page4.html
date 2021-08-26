@@ -27,29 +27,52 @@ and open the template in the editor.
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             />
-        <style>
-            :root {
-                --animate-delay: 2s;
-            }
-            bg-image{
-                background-size:cover; 
-            }
-            img{
-                width:cover;  
-            }
-            .tooltip{
-                font-size: 2rem;
-            }
-            .my-element {
-                display: inline-block;
-                margin: 0 0.5rem;
+    <style>
+            @media only screen and (max-width: 480px) {
 
-                animation: bounce; /* referring directly to the animation's @keyframe declaration */
-                animation-duration: 2s; /* don't forget to set a duration! */
+
             }
-            .animate__animated.animate__bounce {
-                --animate-duration: 1s;
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {  
             }
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {
+                img {
+                    max-width: 100%;
+                    max-height: auto;}
+
+                .container{
+                    max-width:100%;
+                    margin:0 auto; 
+                    padding: 0 auto;
+                }
+            }
+
+            /* Medium devices (landscrape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {}
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {}
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {}
+            body{
+                background-image:url('../glassland.jpg') ;
+                background-size:100% 100%;
+                background-repeat: no-repeat;
+                background-attachment: cover;
+                background-position: center; 
+
+
+            }
+
+            .container{
+                mwidth:100%;
+                margin:0 auto; 
+                padding: 0 auto;
+            }
+
         </style>
     </head>
     <body>
@@ -62,7 +85,7 @@ and open the template in the editor.
 
         </script>
         <nav class="navbar navbar- bg-white justify-content-between"></nav>
-        <div class="bg-image" style="background-image:url('../glassland.jpg')">
+        
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-1">
