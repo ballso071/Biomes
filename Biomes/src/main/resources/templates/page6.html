@@ -7,43 +7,48 @@ and open the template in the editor.
 
 <html>
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-
-        <!-- Latest compiled and minified Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
-
-        <!-- Latest compiled Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-        <title>Tree.io</title>
+        <title>Biomes</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+       <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-            />
+
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel=”stylesheet” href=”css/bootstrap.css”>
+        <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
         <style>
             @media only screen and (max-width: 480px) {
 
-
+               
             }
             /* Extra small devices (phones, 600px and down) */
-            @media only screen and (max-width: 600px) {  
+            @media only screen and (max-width: 600px) {
+                img {
+                    max-width:50;
+                    max-height: auto;
+                    position: absolute;
+                }
+
+                .container-fluid{
+                    max-width:100%;
+                    margin:0 auto; 
+                    padding: 0 auto;
+                }
             }
 
             /* Small devices (portrait tablets and large phones, 600px and up) */
             @media only screen and (min-width: 600px) {
                 img {
-                    max-width: 100%;
-                    max-height: auto;}
+                    max-width: 50%;
+                    max-height: auto;
+                    position: absolute;}
 
-                .container{
+                 .container-fluid{
                     max-width:100%;
                     margin:0 auto; 
                     padding: 0 auto;
@@ -51,7 +56,7 @@ and open the template in the editor.
             }
 
             /* Medium devices (landscrape tablets, 768px and up) */
-            @media only screen and (min-width: 768px) {}
+            @media only screen and (min-width: 768px) { }
 
             /* Large devices (laptops/desktops, 992px and up) */
             @media only screen and (min-width: 992px) {}
@@ -62,164 +67,67 @@ and open the template in the editor.
                 background-image:url('../savanna.jpg') ;
                 background-size:100% 100%;
                 background-repeat: no-repeat;
-                background-attachment: cover;
+                height: 900px;
                 background-position: center; 
 
 
             }
-
-            .container{
-                mwidth:100%;
-                margin:0 auto; 
-                padding: 0 auto;
+            img {
+                max-width: 100%;
+                height: auto;
             }
 
-        </style>    </head>
+            .container{
+                max-width:100%;
+            }
+            .tooltip{
+                font-size: 2rem;
+            }
+        </style>    
+    </head>
     <body>
         <script>
 $(document).ready(function(){
 $('[data-toggle="tooltip"]').tooltip(); 
-  
 });
-
-
         </script>
-        <nav class="navbar navbar- bg-white justify-content-between"></nav>
-     
             <div class="container-fluid">
                 <div class="row">
-
-                    <div class="col-1">
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>   
-                        <br></br>
-                        <br></br> 
-                        <br></br>
-                        <br></br>   
-                        <br></br>    
-                        <br></br>
-                        <br></br>    
-
-                        <img src="../ce.png" class="rounded"width="130" data-toggle="tooltip" data-placement="top" title="Zebra"/>
+                    <div class="col-sm-1">
+                        <img src="../ce.png" class="col-xs-2 img-responsive-fluid"width="130px" data-toggle="tooltip" data-placement="top" title="Zebra"style="position:absolute;top:550px;left:80px;"/>
                     </div>
-                    <div class="col-1"></div>
-                    <div class="col-1">
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>   
-                        <br></br>
-                        <br></br> 
-                        <br></br>
-                        <br></br>  
-                        <br></br> 
-                        <br></br> 
-
-                        <img src="../yee.png" class="rounded"width="200" data-toggle="tooltip" data-placement="top" title="Giraffe"/>
-                        <br></br>
-                        <br></br> 
-                        <br></br> 
-                        <div class="animate__animated animate__bounce animate__infinite">
-                            <img src="../m.png" class="rounded"width="60"/>
-                        </div>
+                 
+                    <div class="col-sm-1">
+                        <img src="../yee.png" class="col-xs-2 img-responsive-fluid"width="250px" data-toggle="tooltip" data-placement="top" title="Giraffe"style="position:absolute;top:380px;left:300px;"/>
+                       
+                        
+                            <img src="../m.png" class="col-xs-2 img-responsive-fluid"width="60px"data-toggle="tooltip" data-placement="top" title="Giraffe"style="position:absolute;top:800px;right:90px;"/>
+                   
 
                     </div>
-                    <div class="col-2"></div>
-                    <div class="col-1">
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>   
-                        <br></br>
-                        <br></br> 
-                        <br></br>
-                        <br></br>  
-                        <br></br> 
-
-
-                        <img src="../ch.png" class="rounded"width="350" data-toggle="tooltip" data-placement="top" title="African bush elephant"/>
+                    
+                    <div class="col-sm-2">
+                        <img src="../ch.png" class="col-xs-2 img-responsive-fluid"width="300px" data-toggle="tooltip" data-placement="top" title="African bush elephant"style="position:absolute;top:480px;left:670px;"/>
 
                     </div> 
-                    <div class="col-1"></div>
-                    <div class="col-1">
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>   
-                        <br></br>
-                        <br></br> 
-                        <br></br>
-                        <br></br>  
-                        <br></br> 
-                        <br></br>
-                        <br></br>  
-                        <br></br>
-                        <br></br>
-                        <br></br>  
-                        <br></br>
-
-                        <img src="../hib.png" class="rounded"width="400" data-toggle="tooltip" data-placement="top" title="Hippo"/>
+                  
+                    <div class="col-sm-2">
+                        
+                        <img src="../hib.png" class="col-xs-2 img-responsive-fluid"width="400px" data-toggle="tooltip" data-placement="top" title="Hippo"style="position:absolute;top:560px;right:200px;"/>
                     </div>
 
-                    <div class="col-1"></div>
-                    <div class="col-1">
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>   
-                        <br></br>
-                        <br></br> 
-                        <br></br>
-                        <br></br>  
-                        <br></br> 
-                        <br></br> 
-                        <br></br> 
-
-                        <img src="../li.png" class="rounded"width="300" data-toggle="tooltip" data-placement="top" title="Lion"/>
+                 
+                    <div class="col-sm-2">
+                        <img src="../li.png" class="col-xs-2 img-responsive-fluid"width="300px" data-toggle="tooltip" data-placement="top" title="Lion"style="position:absolute;top:680px;right:400px;"/>
                     </div>
 
-
-                    <div class="col-1">
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>   
-                        <br></br>
-                        <br></br> 
-                        <br></br>
-                        <br></br>  
-                        <br></br> 
-                        <br></br>  
-                        <br></br> 
-                        <br></br>  
-                        <br></br> 
-                        <br></br>  
-                        <br></br> 
-                        <br></br>  
-                        <br></br> 
-                        <br></br>  
-                        <br></br>
+                    <div class="col-sm-1">
                         <a href = "/index">
-                            <img src="../home.png" class="rounded"width="130">
+                            <img src="../home.png" class="col-xs-2 img-responsive-fluid"width="100px"style="position:absolute;top:830px;right:50px;">
                         </a>
                     </div>
                 </div> 
             </div> 
-        </div>  
-        <nav class="navbar navbar- bg-white justify-content-between"></nav>
+       
     </body>
 </html>
