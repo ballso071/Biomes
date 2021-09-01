@@ -15,7 +15,52 @@ and open the template in the editor.
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <style>
+       /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {
+     .a1{
+                    top:20px;
+                    left:400px;
+                    width:200px;
+                }
+            }
 
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px){ 
+            .a1{
+                    top:20px;
+                    left:500px;
+                    width:200px;
+                }
+            }
+
+            /* Medium devices (landscrape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) { 
+            .a1{
+                    top:20px;
+                    left:700px;
+                    width:200px;
+                }
+   
+            }
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {
+            .a1{
+                    top:20px;
+                    left:800px;
+                    width:200px;
+                }
+            }
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {  
+                .a1{
+                    top:20px;
+                    left:900px;
+                    width:200px;
+                }
+         
+            }
          body{
                 background-image:url('../world.jpg') ;
                 background-size:100% 100%;
@@ -33,7 +78,12 @@ and open the template in the editor.
        
          </div>  
             <div class="container-fluid">
-               
+               <div class="col-sm-9">
+            <a href = "/index">
+                <img src="../home.png" class="a1 col-xs-2 img-responsive-fluid "style="position:absolute;">
+
+            </a>
+        </div>
             </div>
 
    </div>

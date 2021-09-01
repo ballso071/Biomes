@@ -138,4 +138,8 @@ public class Maincon {
     public String pageq5f2(Model model) {
         return "q5f2";
     }
+        @RequestMapping("/index/q")
+    public String pageq(Model model) {
+        return "q";
+    }
 }
