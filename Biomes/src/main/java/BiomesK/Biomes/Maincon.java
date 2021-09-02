@@ -142,4 +142,12 @@ public class Maincon {
     public String pageq(Model model) {
         return "q";
     }
+        @RequestMapping("/index/name")
+    public String pagename(Model model) {
+        return "name";
+    }
+         @RequestMapping("/index/info")
+    public String pageinfo(Model model) {
+        return "info";
+    }
 }
