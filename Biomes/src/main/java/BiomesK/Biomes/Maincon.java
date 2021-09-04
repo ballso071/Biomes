@@ -150,4 +150,8 @@ public class Maincon {
     public String pageinfo(Model model) {
         return "info";
     }
+             @RequestMapping("/index/end")
+    public String pageend(Model model) {
+        return "end";
+    }
 }
